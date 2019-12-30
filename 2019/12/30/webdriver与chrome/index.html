@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Life is short. I use python
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">affjerry</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >webdriver与chrome</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h4 id="本文主要描述Linux环境下webdriver与chrome的安装以及一些操作"><a href="#本文主要描述Linux环境下webdriver与chrome的安装以及一些操作" class="headerlink" title="本文主要描述Linux环境下webdriver与chrome的安装以及一些操作"></a>本文主要描述Linux环境下webdriver与chrome的安装以及一些操作</h4><h5 id="卸载命令"><a href="#卸载命令" class="headerlink" title="卸载命令"></a>卸载命令</h5><pre><code>sudo apt-get remove google-chrome-stable</code></pre><h5 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h5><pre><code>sudo dpkg -i 62.0.3202.62_amd64.deb</code></pre><h5 id="查看chrome版本"><a href="#查看chrome版本" class="headerlink" title="查看chrome版本"></a>查看chrome版本</h5><pre><code>google-chrome -version</code></pre><h5 id="各个版本的chrome下载"><a href="#各个版本的chrome下载" class="headerlink" title="各个版本的chrome下载"></a>各个版本的chrome下载</h5><p><a href="https://www.chromedownloads.net/" target="_blank" rel="noopener" title="下载地址">下载地址</a></p>
+<h5 id="chromdriver下载"><a href="#chromdriver下载" class="headerlink" title="chromdriver下载"></a>chromdriver下载</h5><p><a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank" rel="noopener" title="下载地址">下载地址</a><br>下载好后，在终端切换到文件所在路径，输入以下几个命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf chromedriver_linux64.zip</span><br><span class="line">sudo chmod +x chromedriver</span><br><span class="line">sudo mv chromedriver &#x2F;usr&#x2F;bin&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h5 id="chromdriver与chrome对应关系"><a href="#chromdriver与chrome对应关系" class="headerlink" title="chromdriver与chrome对应关系"></a>chromdriver与chrome对应关系</h5><table>
+<thead>
+<tr>
+<th>chromedriver版本</th>
+<th>支持的Chrome版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>v2.46</td>
+<td>v71-73</td>
+</tr>
+<tr>
+<td>v2.45</td>
+<td>v70-72</td>
+</tr>
+<tr>
+<td>v2.44</td>
+<td>v69-71</td>
+</tr>
+<tr>
+<td>v2.43</td>
+<td>v69-71</td>
+</tr>
+<tr>
+<td>v2.42</td>
+<td>v68-70</td>
+</tr>
+<tr>
+<td>v2.41</td>
+<td>v67-69</td>
+</tr>
+<tr>
+<td>v2.40</td>
+<td>v66-68</td>
+</tr>
+<tr>
+<td>v2.39</td>
+<td>v66-68</td>
+</tr>
+<tr>
+<td>v2.38</td>
+<td>v65-67</td>
+</tr>
+<tr>
+<td>v2.37</td>
+<td>v64-66</td>
+</tr>
+<tr>
+<td>v2.36</td>
+<td>v63-65</td>
+</tr>
+<tr>
+<td>v2.35</td>
+<td>v62-64</td>
+</tr>
+<tr>
+<td>v2.34</td>
+<td>v61-63</td>
+</tr>
+<tr>
+<td>v2.33</td>
+<td>v60-62</td>
+</tr>
+<tr>
+<td>v2.32</td>
+<td>v59-61</td>
+</tr>
+<tr>
+<td>v2.31</td>
+<td>v58-60</td>
+</tr>
+<tr>
+<td>v2.30</td>
+<td>v58-60</td>
+</tr>
+<tr>
+<td>v2.29</td>
+<td>v56-58</td>
+</tr>
+<tr>
+<td>v2.28</td>
+<td>v55-57</td>
+</tr>
+<tr>
+<td>v2.27</td>
+<td>v54-56</td>
+</tr>
+<tr>
+<td>v2.26</td>
+<td>v53-55</td>
+</tr>
+<tr>
+<td>v2.25</td>
+<td>v53-55</td>
+</tr>
+<tr>
+<td>v2.24</td>
+<td>v52-54</td>
+</tr>
+<tr>
+<td>v2.23</td>
+<td>v51-53</td>
+</tr>
+<tr>
+<td>v2.22</td>
+<td>v49-52</td>
+</tr>
+<tr>
+<td>v2.21</td>
+<td>v46-50</td>
+</tr>
+<tr>
+<td>v2.20</td>
+<td>v43-48</td>
+</tr>
+<tr>
+<td>v2.19</td>
+<td>v43-47</td>
+</tr>
+<tr>
+<td>v2.18</td>
+<td>v43-46</td>
+</tr>
+<tr>
+<td>v2.17</td>
+<td>v42-43</td>
+</tr>
+<tr>
+<td>v2.13</td>
+<td>v42-45</td>
+</tr>
+<tr>
+<td>v2.15</td>
+<td>v40-43</td>
+</tr>
+<tr>
+<td>v2.14</td>
+<td>v39-42</td>
+</tr>
+<tr>
+<td>v2.13</td>
+<td>v38-41</td>
+</tr>
+<tr>
+<td>v2.12</td>
+<td>v36-40</td>
+</tr>
+<tr>
+<td>v2.11</td>
+<td>v36-40</td>
+</tr>
+<tr>
+<td>v2.10</td>
+<td>v33-36</td>
+</tr>
+<tr>
+<td>v2.9</td>
+<td>v31-34</td>
+</tr>
+<tr>
+<td>v2.8</td>
+<td>v30-33</td>
+</tr>
+<tr>
+<td>v2.7</td>
+<td>v30-33</td>
+</tr>
+<tr>
+<td>v2.6</td>
+<td>v29-32</td>
+</tr>
+<tr>
+<td>v2.5</td>
+<td>v29-32</td>
+</tr>
+<tr>
+<td>v2.4</td>
+<td>v29-32</td>
+</tr>
+</tbody></table>
+<h5 id="linux环境下本地调用-运用虚拟界面的方法"><a href="#linux环境下本地调用-运用虚拟界面的方法" class="headerlink" title="linux环境下本地调用 运用虚拟界面的方法"></a>linux环境下本地调用 运用虚拟界面的方法</h5><h6 id="安装虚拟界面"><a href="#安装虚拟界面" class="headerlink" title="安装虚拟界面"></a>安装虚拟界面</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install xvfb</span><br><span class="line">pip install xvfbwrapper</span><br><span class="line">pip install PyVirtualDisplay</span><br></pre></td></tr></table></figure>
+<h6 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from pyvirtualdisplay import Display</span><br><span class="line">from selenium import webdriver</span><br><span class="line">display &#x3D; Display(visible&#x3D;0, size&#x3D;(1280, 875))</span><br><span class="line">display.start()</span><br><span class="line">driver &#x3D; webdriver.Chrome()</span><br><span class="line">driver.get(url)</span><br><span class="line">driver.quit()</span><br><span class="line">display.stop()</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2019/12/30/webdriver%E4%B8%8Echrome/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2019/12/30/webdriver%E4%B8%8Echrome/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " target="_blank" rel="noopener" style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
